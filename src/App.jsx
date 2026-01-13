@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import WhatsAppButton from './components/WhatsAppButton';
 import Home from './pages/Home';
@@ -39,6 +39,7 @@ function App() {
             <Route path="/components" element={<Components />} />
             <Route path="/kits" element={<Kits />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           <Footer />
         </main>
