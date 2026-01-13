@@ -1,0 +1,42 @@
+.app-container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-content {
+    margin-right: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+    transition: margin-right var(--transition-normal), width var(--transition-normal);
+    padding-bottom: 80px;
+    /* Space for footer/whatsapp button */
+}
+
+.menu-toggle-btn {
+    display: none;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1001;
+    background: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 992px) {
+    .main-content {
+        margin-right: 0;
+        width: 100%;
+        padding-top: 60px;
+        /* Space for toggle button */
+    }
+
+    .menu-toggle-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

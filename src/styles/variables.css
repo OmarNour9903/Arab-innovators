@@ -1,0 +1,25 @@
+:root {
+  /* Brand Colors */
+  --color-primary: #177c75;
+  --color-dark: #0c181a;
+  --color-highlight: #fad817;
+  --color-secondary: #27c1b3;
+  --color-olive: #8c9a43;
+
+  /* Functional Colors */
+  --bg-body: var(--color-dark);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  --bg-card: rgba(255, 255, 255, 0.05);
+  --border-card: rgba(255, 255, 255, 0.1);
+
+  /* Spacing */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --sidebar-width: 280px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
