@@ -24,25 +24,30 @@ const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-social">
-                    <h3 className="footer-social-title">تابعنا على</h3>
-                    <div className="footer-social-links">
-                        <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="footer-social-link tiktok">
-                            <TikTokIcon />
-                            <span>TikTok</span>
-                        </a>
-                        <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="footer-social-link instagram">
-                            <Instagram size={20} />
-                            <span>Instagram</span>
-                        </a>
-                        <a href="https://www.facebook.com/share/1AR8QyRQuu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="footer-social-link facebook">
-                            <Facebook size={20} />
-                            <span>Facebook</span>
-                        </a>
-                    </div>
+                <div className="footer-section">
+                    <h3>تواصل معنا</h3>
+                    <ul className="footer-links contact-info">
+                        <li>
+                            <Phone size={18} />
+                            <span>01055923515</span>
+                        </li>
+                        <li>
+                            <Mail size={18} />
+                            <span>omarnour992003@gmail.com</span>
+                        </li>
+                        <li>
+                            <MapPin size={18} />
+                            <span>مصر - المنيا</span>
+                        </li>
+                    </ul>
                 </div>
-                <div className="footer-copyright">
-                    <p>&copy; {new Date().getFullYear()} المبتكرين العرب. جميع الحقوق محفوظة.</p>
+            </div>
+
+            <div className="footer-bottom">
+                <p>جميع الحقوق محفوظة &copy; {new Date().getFullYear()} المبتكرين العرب</p>
+                <div className="social-links">
+                    <a href="https://www.facebook.com/share/1AR8QyRQuu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
+                    <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
                 </div>
             </div>
         </footer>

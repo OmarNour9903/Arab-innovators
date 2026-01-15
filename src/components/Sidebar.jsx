@@ -43,7 +43,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
                     <div className="logo-placeholder">
-                        {/* Placeholder for logo */}
+                        <img src="/images/logo.jpeg" alt="المبتكرين العرب" className="sidebar-logo" />
                         <h1 className="logo-text">المبتكرين العرب</h1>
                     </div>
                     <button className="close-btn mobile-only" onClick={toggleSidebar}>
@@ -66,12 +66,11 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 </nav>
 
                 <div className="sidebar-footer">
-                    <p className="social-title">تابعنا على</p>
                     <div className="social-links">
                         <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link tiktok">
                             <TikTokIcon />
                         </a>
-                        <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link instagram">
+                        <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer" className="social-link instagram">
                             <Instagram size={20} />
                         </a>
                         <a href="https://www.facebook.com/share/1AR8QyRQuu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-link facebook">

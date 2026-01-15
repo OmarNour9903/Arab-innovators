@@ -8,49 +8,61 @@
     transition: transform var(--transition-normal), box-shadow var(--transition-normal);
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
     position: relative;
     overflow: hidden;
-    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
+/* Add an overlay to ensure text readability */
 .card::before {
     content: '';
     position: absolute;
     top: 0;
+    left: 0;
     right: 0;
-    width: 100%;
-    height: 4px;
-    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.9);
+    /* Adjust opacity as needed */
+    z-index: 0;
+}
+
+/* Ensure content is above the overlay */
+.card>* {
+    position: relative;
+    z-index: 1;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-icon {
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--color-primary), var(--color-dark));
-    border-radius: 15px;
+    width: 64px;
+    height: 64px;
+    background: var(--primary-color);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 1.5rem;
     color: white;
-}
-
-.card-title {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--color-dark);
     margin-bottom: 1rem;
 }
 
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    /* Ensure this is readable against the white overlay */
+    margin: 0;
+}
+
 .card-description {
-    color: #666;
+    color: var(--text-secondary);
+    /* Ensure this is readable */
     line-height: 1.6;
-    margin-bottom: 1.5rem;
+    margin: 0;
     flex-grow: 1;
 }
 
