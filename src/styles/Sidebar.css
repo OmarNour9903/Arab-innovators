@@ -32,12 +32,12 @@
 }
 
 .sidebar-logo {
-    width: 80px;
-    height: 80px;
+    max-height: 48px;
+    width: auto;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid var(--color-accent);
-    box-shadow: var(--shadow-md);
+    border: 2px solid var(--color-accent);
+    box-shadow: var(--shadow-sm);
 }
 
 .logo-text {

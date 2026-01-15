@@ -16,7 +16,7 @@
     border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-/* Refined overlay for better readability */
+/* Dark overlay for better readability on images */
 .card::before {
     content: '';
     position: absolute;
@@ -24,13 +24,13 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 0;
     transition: background 0.3s ease;
 }
 
 .card:hover::before {
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(0, 0, 0, 0.7);
 }
 
 /* Ensure content is above the overlay */
@@ -41,7 +41,8 @@
 
 .card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
 .card-icon {
@@ -54,7 +55,7 @@
     justify-content: center;
     color: white;
     margin-bottom: 0.5rem;
-    box-shadow: 0 8px 20px rgba(15, 76, 129, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease;
 }
 
@@ -65,16 +66,19 @@
 .card-title {
     font-size: 1.4rem;
     font-weight: 700;
-    color: var(--color-primary-dark);
+    color: white;
     margin: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
 }
 
 .card-description {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.95);
     line-height: 1.6;
     margin: 0;
     flex-grow: 1;
     font-size: 1rem;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+    font-weight: 500;
 }
 
 .card-btn {
