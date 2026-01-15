@@ -4,25 +4,7 @@ import { Home, Info, BookOpen, Package, Cpu, Wrench, Mail, Instagram, Facebook, 
 import logo from '../assets/images/logo.jpeg';
 import '../styles/Sidebar.css';
 
-// Custom TikTok icon since Lucide might not have it or it's named differently
-const TikTokIcon = () => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-music"
-    >
-        <path d="M9 18V5l12-2v13" />
-        <circle cx="6" cy="18" r="3" />
-        <circle cx="18" cy="16" r="3" />
-    </svg>
-);
+import { TikTokIcon } from './Icons';
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
     const navItems = [
@@ -69,7 +51,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                 <div className="sidebar-footer">
                     <div className="social-links">
                         <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link tiktok">
-                            <TikTokIcon />
+                            <TikTokIcon size={20} />
                         </a>
                         <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer" className="social-link instagram">
                             <Instagram size={20} />

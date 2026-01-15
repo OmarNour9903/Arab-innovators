@@ -1,32 +1,15 @@
 import React from 'react';
 import { Instagram, Facebook, Phone, Mail, MapPin } from 'lucide-react';
+import { TikTokIcon } from './Icons';
 import '../styles/Footer.css';
-
-const TikTokIcon = () => (
-    <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-    >
-        <path d="M9 18V5l12-2v13" />
-        <circle cx="6" cy="18" r="3" />
-        <circle cx="18" cy="16" r="3" />
-    </svg>
-);
 
 const Footer = () => {
     return (
         <footer className="footer">
             <div className="footer-content">
-                <div className="footer-section">
+                <div className="footer-contact">
                     <h3>تواصل معنا</h3>
-                    <ul className="footer-links contact-info">
+                    <ul className="contact-list">
                         <li>
                             <Phone size={18} />
                             <span>01055923515</span>
@@ -41,13 +24,20 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-            </div>
 
-            <div className="footer-bottom">
-                <p>جميع الحقوق محفوظة &copy; {new Date().getFullYear()} المبتكرين العرب</p>
-                <div className="social-links">
-                    <a href="https://www.facebook.com/share/1AR8QyRQuu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer"><Facebook size={20} /></a>
-                    <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer"><Instagram size={20} /></a>
+                <div className="footer-info">
+                    <p className="copyright">جميع الحقوق محفوظة &copy; 2026 المبتكرين العرب</p>
+                    <div className="social-links footer-socials">
+                        <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <TikTokIcon size={20} />
+                        </a>
+                        <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Instagram size={20} />
+                        </a>
+                        <a href="https://www.facebook.com/share/1AR8QyRQuu/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Facebook size={20} />
+                        </a>
+                    </div>
                 </div>
             </div>
         </footer>
