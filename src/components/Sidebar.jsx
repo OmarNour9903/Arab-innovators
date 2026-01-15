@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Home, Info, BookOpen, Package, Cpu, Wrench, Mail, Instagram, Facebook, X } from 'lucide-react';
+import logo from '../assets/images/logo.jpeg';
 import '../styles/Sidebar.css';
 
 // Custom TikTok icon since Lucide might not have it or it's named differently
@@ -43,7 +44,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
             <aside className={`sidebar ${isOpen ? 'open' : ''}`}>
                 <div className="sidebar-header">
                     <div className="logo-placeholder">
-                        <img src="/images/logo.jpeg" alt="المبتكرين العرب" className="sidebar-logo" />
+                        <img src={logo} alt="المبتكرين العرب" className="sidebar-logo" />
                         <h1 className="logo-text">المبتكرين العرب</h1>
                     </div>
                     <button className="close-btn mobile-only" onClick={toggleSidebar}>

@@ -1,7 +1,8 @@
 .card {
-    background: rgba(255, 255, 255, 0.05);
-    /* Glass-like effect from variable but more opaque if needed */
-    background: #fff;
+    background-image: url('../assets/images/background.jpeg');
+    background-size: cover;
+    /* background: rgba(255, 255, 255, 0.05); - Removed to show image */
+    /* background: #fff; - Removed to show image */
     border-radius: 20px;
     padding: 2rem;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
