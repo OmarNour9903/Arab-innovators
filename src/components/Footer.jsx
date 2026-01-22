@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Facebook, Phone, Mail, MapPin } from 'lucide-react';
+import { Instagram, Facebook, Phone, Mail, MapPin, Youtube } from 'lucide-react';
 import { TikTokIcon } from './Icons';
 import '../styles/Footer.css';
 
@@ -30,6 +30,9 @@ const Footer = () => {
                     <div className="social-links footer-socials">
                         <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link">
                             <TikTokIcon size={20} />
+                        </a>
+                        <a href="https://www.youtube.com/@Abn_frnaas" target="_blank" rel="noopener noreferrer" className="social-link">
+                            <Youtube size={20} />
                         </a>
                         <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer" className="social-link">
                             <Instagram size={20} />

@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import { Home, Info, BookOpen, Package, Cpu, Wrench, Mail, Instagram, Facebook, X } from 'lucide-react';
+import { Home, Info, BookOpen, Package, Cpu, Wrench, Mail, Instagram, Facebook, X, Youtube } from 'lucide-react';
 import logo from '../assets/images/logo.jpeg';
 import '../styles/Sidebar.css';
 
@@ -52,6 +52,9 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
                     <div className="social-links">
                         <a href="https://www.tiktok.com/@el_moptakren_el_arab_?_r=1&_t=ZS-932Q4NV9TiT" target="_blank" rel="noopener noreferrer" className="social-link tiktok">
                             <TikTokIcon size={20} />
+                        </a>
+                        <a href="https://www.youtube.com/@Abn_frnaas" target="_blank" rel="noopener noreferrer" className="social-link youtube">
+                            <Youtube size={20} />
                         </a>
                         <a href="https://www.instagram.com/abn_frnaas_?igsh=MWkzbWR6YTh6Y3VpOA==" target="_blank" rel="noopener noreferrer" className="social-link instagram">
                             <Instagram size={20} />

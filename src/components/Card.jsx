@@ -2,9 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Card.css';
 
-const Card = ({ title, description, icon: Icon, to, buttonText = "تواصل معنا" }) => {
+const Card = ({ title, description, icon: Icon, to, buttonText = "تواصل معنا", backgroundImage }) => {
+    const cardStyle = backgroundImage
+        ? {
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            color: 'white',
+        }
+        : {};
+
     return (
-        <div className="card">
+        <div className="card" style={cardStyle}>
             <div className="card-icon">
                 <Icon size={28} />
             </div>
