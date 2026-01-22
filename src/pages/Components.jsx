@@ -10,21 +10,21 @@ const Components = () => {
             title: 'Arduino Uno',
             description: 'اللوحة الأشهر للمشاريع الإلكترونية. سهلة الاستخدام ومناسبة للمبتدئين.',
             icon: Cpu,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن منتج Arduino Uno')}`
         },
         {
             id: 2,
             title: 'حساسات (Sensors)',
             description: 'مجموعة متنوعة من الحساسات: حرارة، ضوء، مسافة، والمزيد.',
             icon: Radio,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن منتج حساسات (Sensors)')}`
         },
         {
             id: 3,
             title: 'محركات (Motors)',
             description: 'محركات DC و Servo و Stepper لمشاريع الحركة والروبوتات.',
             icon: Zap,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن منتج محركات (Motors)')}`
         }
     ];
 

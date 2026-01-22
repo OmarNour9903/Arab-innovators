@@ -10,21 +10,21 @@ const Packages = () => {
             title: 'الباقة الشاملة',
             description: 'تتضمن كورس البرمجة + كورس الإلكترونيات + كيت المبتدئين بسعر مخفض.',
             icon: Box,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن الباقة الشاملة')}`
         },
         {
             id: 2,
             title: 'باقة المبرمج الصغير',
             description: 'مجموعة مختارة من الكورسات المناسبة للأطفال والناشئين.',
             icon: Star,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن باقة المبرمج الصغير')}`
         },
         {
             id: 3,
             title: 'باقة المحترف',
             description: 'مستوى متقدم في البرمجة والتحكم الآلي مع مشاريع تخرج.',
             icon: Layers,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن باقة المحترف')}`
         }
     ];
 

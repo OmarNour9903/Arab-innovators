@@ -10,7 +10,7 @@ const Courses = () => {
             title: 'أساسيات البرمجة',
             description: 'تعلم أساسيات البرمجة من الصفر حتى الاحتراف مع أمثلة عملية وتطبيقات واقعية.',
             icon: Code,
-            to: '/contact' // Or WhatsApp link directly
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كورس أساسيات البرمجة')}`
         },
         // Placeholder examples
         {
@@ -18,14 +18,14 @@ const Courses = () => {
             title: 'تطوير تطبيقات الموبايل',
             description: 'دورة شاملة في بناء تطبيقات الأندرويد و iOS باستخدام أحدث التقنيات.',
             icon: Smartphone,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كورس تطوير تطبيقات الموبايل')}`
         },
         {
             id: 3,
             title: 'تطوير المواقع',
             description: 'احترف برمجة وتصميم المواقع الإلكترونية المتجاوبة.',
             icon: Globe,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كورس تطوير المواقع')}`
         }
     ];
 

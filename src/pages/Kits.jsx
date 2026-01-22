@@ -10,21 +10,21 @@ const Kits = () => {
             title: 'كيت السيارة الذكية',
             description: 'اصنع سيارتك الخاصة وبرمجها للتحكم عن بعد أو تتبع المسار.',
             icon: Car,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كيت السيارة الذكية')}`
         },
         {
             id: 2,
             title: 'كيت الذراع الروبوتية',
             description: 'تعلم أساسيات الروبوتات من خلال بناء وبرمجة ذراع آلية.',
             icon: Bot,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كيت الذراع الروبوتية')}`
         },
         {
             id: 3,
             title: 'كيت المنزل الذكي',
             description: 'حول منزلك لبيت ذكي مع هذا الكيت المتكامل.',
             icon: Wrench,
-            to: '/contact'
+            to: `https://wa.me/201055923515?text=${encodeURIComponent('محتاج استفسر عن كيت المنزل الذكي')}`
         }
     ];
 
